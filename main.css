@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #c48b8b;
+}
+
+.container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #52b16a;
+  box-shadow: 0 2px 8px rgba(0,0,0,.16);
+  width: 750px;
+  height: 680px;
+  text-align: center;
+  font-family: 'Nunito',sans-serif; 
+}
+h1{
+  margin: 12px 0;
+}
+
+input{
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  background: #fff;
+}
+button{
+  padding: 0.5rem;
+  background-color: #2366a8;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+ul{
+ padding: 15px;
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  
+}
+
+.todo li {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+  
+}
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fade {
+  
+  opacity: 1;
+  -webkit-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+}
+
+
+button:hover{
+  background-color: #1565c0;
+}
+
+li:hover{
+  background-color: #e0e0e0;
+}
+
+.checked{
+  text-decoration: line-through;
+  background-color: #e0e0e0;
+}
+
+.close {
+  
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
